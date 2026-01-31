@@ -1,0 +1,19 @@
+Third-Party Notices
+----------------------------------
+
+This project uses the following third-party components:
+
+1. **BME280**  
+   License: GNU GENERAL PUBLIC LICENSE, version 3.0
+   Copyright (c) Tyler Glenn  
+   https://github.com/finitespace/BME280
+
+2. **AViShaMQTT**  
+   License: GNU GENERAL PUBLIC LICENSE, version 3.0
+   Copyright (c) Ajang
+   https://github.com/avisha95/AViShaMQTT
+
+3. **MQTT**  
+   License: MIT License  
+   Copyright (c) 2015 Joel Gaehwiler
+   https://github.com/256dpi/arduino-mqtt
