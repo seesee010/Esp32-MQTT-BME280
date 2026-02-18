@@ -1,4 +1,10 @@
 # Esp32-C3-SuperMini-MQTT-BME280
+
+![GitHub issues](https://img.shields.io/github/issues/seesee010/Esp32-C3-SuperMini-MQTT-BME280)
+![GitHub PRs](https://img.shields.io/github/issues-pr/seesee010/Esp32-C3-SuperMini-MQTT-BME280)
+![GitHub last commit](https://img.shields.io/github/last-commit/seesee010/Esp32-C3-SuperMini-MQTT-BME280)
+![GitHub License](https://img.shields.io/github/license/seesee010/Esp32-C3-SuperMini-MQTT-BME280)
+
 Just as the title tell
 
 ESP32-C3 with BME280 sensor sending data via MQTT to Home Assistant.
