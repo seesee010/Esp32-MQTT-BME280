@@ -26,3 +26,5 @@ Please refer to their respective repositories for full license text.
 ## Hardware
 - ESP32-C3 Super Mini
 - BME280 Sensor
+
+![Alt](https://repobeats.axiom.co/api/embed/75b86bf028b1a3881bd7c1013057e2069e48c6ff.svg "Repobeats analytics image")
