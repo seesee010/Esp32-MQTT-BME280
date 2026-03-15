@@ -1,6 +1,6 @@
 /*
   seesee010
-  2026-01
+  2026-03-15
 
   BME + MQTT
 
@@ -82,19 +82,6 @@ BME280I2C bme;
 
 float temp(NAN), hum(NAN), pres(NAN);
 
-void getData(Stream *data) {
-
-// from BME_280_I2C_Test
-
-   BME280::TempUnit tempUnit(BME280::TempUnit_Celsius);
-   BME280::PresUnit presUnit(BME280::PresUnit_Pa);  
-
-   bme.read(pres, temp, hum, tempUnit, presUnit);
-// ##########
-
-  delay(500);
-}
-
 void sendData(float temp, float pres, float hum) {
 
   // send -> HA Server
@@ -137,16 +124,14 @@ void loop() {
   BME280::TempUnit tempUnit(BME280::TempUnit_Celsius);
   BME280::PresUnit presUnit(BME280::PresUnit_Pa);
   bme.read(pres, temp, hum, tempUnit, presUnit);
-  
+
+  Serial.println("Publishing...");
   sendData(temp, pres / 100000.0, hum);
 
   Serial.print("T:"); Serial.print(temp);
   Serial.print(" H:"); Serial.print(hum);
   Serial.print(" P:"); Serial.println(pres / 100000.0);
-  
-  Serial.println("Publishing...");
 
-  
   Serial.println("Done!\n");
   delay(3500);
 }
