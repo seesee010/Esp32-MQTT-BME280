@@ -1,4 +1,4 @@
-# Esp32-C3-SuperMini-MQTT-BME280
+# Esp32-MQTT-BME280
 
 ![GitHub issues](https://img.shields.io/github/issues/seesee010/Esp32-C3-SuperMini-MQTT-BME280)
 ![GitHub PRs](https://img.shields.io/github/issues-pr/seesee010/Esp32-C3-SuperMini-MQTT-BME280)
