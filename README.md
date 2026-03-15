@@ -11,7 +11,7 @@ ESP32-C3 Super Mini with BME280 sensor sending data via MQTT to Home Assistant.
 
 Here you can get a great view about how you should connect the wires:
 
-![Pic](https://github.com/seesee010/Esp32-C3-SuperMini-MQTT-BME280/blob/main/pic/project.png)
+<img src="https://github.com/seesee010/Esp32-C3-SuperMini-MQTT-BME280/blob/main/pic/project.png" width="300">
 
 ## Dependencies
 
