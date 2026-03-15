@@ -7,8 +7,16 @@
 
 ESP32-C3 Super Mini with BME280 sensor sending data via MQTT to Home Assistant.
 
-## View
+## How2Use
 
+### Guide
+Here is for you a quick Guide, you can use if you want to.
+
+1. create a file called `config.h` in `src/BMEMqtt`.
+2. In the file there should stand everything from the `config.example.h`, but replace it with your data. It will auto use config instead of config.example if it exists.
+3. Everything should work fine from this point on. You may want to change the topic defines in the `BMEMqtt.ino`.
+
+### Flow diagram
 Here you can get a great view about how you should connect the wires:
 
 <img src="https://github.com/seesee010/Esp32-C3-SuperMini-MQTT-BME280/blob/main/pic/project.png" width="300">
