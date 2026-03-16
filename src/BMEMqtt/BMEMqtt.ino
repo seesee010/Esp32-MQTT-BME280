@@ -62,6 +62,8 @@
 #define pin_sda 8
 #define pin_scl 9
 
+#define publish_interval 3500
+
 // using the BME280I2C.h by Tyler Glenn
 // gpl 3.0 license
 #include <BME280I2C.h>
@@ -79,8 +81,6 @@ const char *topicHum = "homeassistant/outside/0/hum";
 AViShaMQTT mqtt(ssid, password, mqtt_server, 1883, mqtt_user, mqtt_pass);
 
 BME280I2C bme;
-
-float temp(NAN), hum(NAN), pres(NAN);
 
 void sendData(float temp, float pres, float hum) {
 
@@ -110,6 +110,8 @@ void setup() {
 }
 
 void loop() {
+  
+float temp(NAN), hum(NAN), pres(NAN);
   mqtt.loop();
   
   // Connection Check
@@ -125,6 +127,11 @@ void loop() {
   BME280::PresUnit presUnit(BME280::PresUnit_Pa);
   bme.read(pres, temp, hum, tempUnit, presUnit);
 
+  if (isnan(temp) || isnan(hum) || isnan(pres)) {
+    Serial.println("Sensor read failed, skipping.");
+    return;
+}
+
   Serial.println("Publishing...");
   sendData(temp, pres / 100000.0, hum);
 
@@ -133,5 +140,5 @@ void loop() {
   Serial.print(" P:"); Serial.println(pres / 100000.0);
 
   Serial.println("Done!\n");
-  delay(3500);
+  delay(publish_interval);
 }
