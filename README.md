@@ -47,7 +47,7 @@ You may want to use an original / high quallity usb c male wire, else it could c
 > [!NOTE]
 > You can solve that problems in 2 ways:
 >
-> 1. use the required usb c male calbe (with the right specs)
+> 1. use the required usb c male cable (with the right specs)
 >
 > 2. use an capacitor
 
