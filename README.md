@@ -21,6 +21,10 @@ Here you can get a great view about how you should connect the wires:
 
 <img src="https://github.com/seesee010/Esp32-C3-SuperMini-MQTT-BME280/blob/main/pic/project.png" width="300">
 
+> [!NOTE] 
+> SDA is on pin gpio8,
+> SCL is on pin gpio9
+
 ## Dependencies
 
 This project uses the following libraries:
